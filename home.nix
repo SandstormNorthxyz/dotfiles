@@ -25,8 +25,8 @@
   ];
   # Home Manager needs a bit of information about you and the paths it should
   # manage.
-  home.username = "silas";
-  home.homeDirectory = "/home/silas";
+  home.username = "colli";
+  home.homeDirectory = "/home/colli";
 
   # This value determines the Home Manager release that your configuration is
   # compatible with. This helps avoid breakage when a new Home Manager release
@@ -173,13 +173,13 @@
       type = "Application";
     };
 
-    ltspice = {
-      name = "ltspice";
-      genericName = "Circuit Simulator";
-      exec = "wine \"/home/silas/.wine/drive_c/Program\ Files/LTC/LTspiceXVII/XVIIx86.exe\"";
-      terminal = false;
-      type = "Application";
-    };
+    # ltspice = {
+    #   name = "ltspice";
+    #   genericName = "Circuit Simulator";
+    #   exec = "wine \"/home/silas/.wine/drive_c/Program\ Files/LTC/LTspiceXVII/XVIIx86.exe\"";
+    #   terminal = false;
+    #   type = "Application";
+    # };
     chirp = {
       name = "chirp";
       genericName = "Radio Programmer";

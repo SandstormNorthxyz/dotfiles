@@ -35,7 +35,7 @@
 
     in
     {
-      homeConfigurations."silas" = home-manager.lib.homeManagerConfiguration {
+      homeConfigurations."colli" = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
 
         # Specify your home configuration modules here, for example,
@@ -47,13 +47,13 @@
         extraSpecialArgs = { inherit nix-colors; };
       };
 
-      nixosConfigurations.sansa = nixpkgs.lib.nixosSystem {
+      nixosConfigurations.clarke = nixpkgs.lib.nixosSystem {
         inherit pkgs;
 
         modules = [
-          nixos-hardware.nixosModules.framework-16-7040-amd # hardware config from: https://github.com/NixOS/nixos-hardware/blob/master/flake.nix
+          nixos-hardware.nixosModules.lenovo-thinkpad-x1-9th-gen # hardware config from: https://github.com/NixOS/nixos-hardware/blob/master/flake.nix
           ./system
-          ./hosts/sansa/configuration.nix
+          ./hosts/clarke/configuration.nix
           waveforms.nixosModule
         ];
       };
