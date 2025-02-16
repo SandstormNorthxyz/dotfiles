@@ -64,16 +64,16 @@ in {
 
         # Focus
         "${mod}+h" = "focus left";
-        "${mod}+n" = "focus down";
-        "${mod}+e" = "focus up";
-        "${mod}+i" = "focus right";
+        "${mod}+j" = "focus down";
+        "${mod}+k" = "focus up";
+        "${mod}+l" = "focus right";
         "${mod}+a" = "focus parent";
 
         # Move
         "${mod}+Shift+h" = "move left";
-        "${mod}+Shift+n" = "move down";
-        "${mod}+Shift+e" = "move up";
-        "${mod}+Shift+i" = "move right";
+        "${mod}+Shift+j" = "move down";
+        "${mod}+Shift+k" = "move up";
+        "${mod}+Shift+l" = "move right";
         "${mod}+f" = "fullscreen toggle";
         "${mod}+Shift+space" = "floating toggle";
         "${mod}+r" = "mode resize";
@@ -84,7 +84,7 @@ in {
         "${mod}+Shift+c" = "restart";
         "${mod}+Shift+r" = "reload";
         "${mod}+Shift+x" = "exec i3-nagbar -t warning -m 'Do you want to exit i3?' -b 'Yes' 'swaymsg exit'";
-        "${mod}+l" = "exec swaylock";
+        "${mod}+y" = "exec swaylock";
 
         # Workspaces
         "${mod}+1" = "workspace number 1";
@@ -143,7 +143,7 @@ in {
       input = {
         "*" = {
           xkb_layout = "us,us";
-          xkb_variant = "colemak,";
+          xkb_variant = ",colemak";
           xkb_options = "grp:alt_shift_toggle,caps:ctrl_modifier";          
         };
         "type:touchpad" = {

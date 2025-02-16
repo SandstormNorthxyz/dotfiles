@@ -142,39 +142,13 @@
       keys = {
         normal = {
           g = { a = "code_action"; };
-          n = "move_line_down";
-          e = "move_line_up";
-          i = "move_char_right";
-          h = "move_char_left";
-          l = "insert_mode";
-          L = "insert_at_line_start";
-          N = "search_next";
-          E = "search_prev";
-          I = "move_next_word_end";
-          H = "move_prev_word_start";
-          C-w = {
-            h = "jump_view_left";
-            n = "jump_view_down";
-            e = "jump_view_up";
-            i = "jump_view_right";
-            H = "swap_view_left";
-            N = "swap_view_down";
-            E = "swap_view_up";
-            I = "swap_view_right";
-          };
-          space = {
+         space = {
             f = "file_picker_in_current_directory";
             F = "file_picker";
           };
 
         };
         select = {
-          n = "extend_line_down";
-          e = "extend_line_up";
-          i = "extend_char_right";
-          h = "extend_char_left";
-          N = "extend_search_next";
-          E = "extend_search_prev";
         }; 
       };
 

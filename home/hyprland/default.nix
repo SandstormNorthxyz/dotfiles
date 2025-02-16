@@ -52,17 +52,17 @@
           "$mod, up, movefocus, u"
           "$mod, down, movefocus, d"
           "$mod, h, movefocus, l"
-          "$mod, n, movefocus, r"
-          "$mod, e, movefocus, u"
-          "$mod, i, movefocus, d"
+          "$mod, j, movefocus, r"
+          "$mod, k, movefocus, u"
+          "$mod, l, movefocus, d"
           "$mod SHIFT, left, movewindow, l"
           "$mod SHIFT, right, movewindow, r"
           "$mod SHIFT, up, movewindow, u"
           "$mod SHIFT, down, movewindow, d"
           "$mod SHIFT, h, movewindow, l"
-          "$mod SHIFT, n, movewindow, r"
-          "$mod SHIFT, e, movewindow, u"
-          "$mod SHIFT, i, movewindow, d"
+          "$mod SHIFT, j, movewindow, r"
+          "$mod SHIFT, k, movewindow, u"
+          "$mod SHIFT, l, movewindow, d"
         ]
         ++ (
           # workspaces
@@ -90,11 +90,10 @@
         "eDP-1,preferred,auto,1"
       ];
 
-      animations.enabled = false;
 
       input = {
         kb_layout = "us,us";
-        kb_variant = "colemak,";
+        kb_variant = ",colemak";
         kb_options = "grp:alt_shift_toggle,caps:ctrl_modifier";
         touchpad.natural_scroll = true;
       };
@@ -104,6 +103,34 @@
         border_size = 2;
         "col.active_border" = "rgba(4f1ab2AA)";
         layout = "dwindle";
+      };
+
+      animations = {
+          enabled = true;
+      
+          # Animation curves
+          bezier = 
+            [
+              "md3_standard, 0.2, 0.0, 0, 1.0"
+              "md3_decel, 0.05, 0.7, 0.1, 1"
+              "md3_accel, 0.3, 0, 0.8, 0.15"
+              "overshoot, 0.05, 0.9, 0.1, 1.05"
+              "hyprnostretch, 0.05, 0.9, 0.1, 1.0"
+              "bounce, 0.4, 0.05, 0, 1.1"
+              "test, 2, 1.25, -0.5, -1"
+              "funky, 0.46, 0.35, -0.2, 1.2"
+            ];
+          # Animation configs
+          animation = 
+            [
+              "windows, 1, 2, overshoot, slide"
+              "border, 1, 1, default"
+              "workspaces, 1, 2, overshoot, slide"
+              "fadeIn, 1, 5, md3_decel"
+              "fadeOut, 1, 5, md3_decel"
+              "layers, 1, 0.2, default"
+            ];
+      
       };
 
       dwindle = {

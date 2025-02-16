@@ -10,16 +10,16 @@
     settings = {
       keybinding = {
         universal = {
-          prevItem-alt = "e";
-          nextItem-alt = "n";
-          prevBlock-alt = "h";
-          nextBlock-alt = "i";
+          # prevItem-alt = "e";
+          # nextItem-alt = "n";
+          # prevBlock-alt = "h";
+          # nextBlock-alt = "i";
                 
-          scrollUpMain-alt1 =  "E";
-          scrollDownMain-alt1 =  "N";
-          scrollLeft = "H";
-          scrollRight = "I";
-          edit = "l";
+          # scrollUpMain-alt1 =  "E";
+          # scrollDownMain-alt1 =  "N";
+          # scrollLeft = "H";
+          # scrollRight = "I";
+          # edit = "l";
         };
 
         files.ignoreFile = "y";
