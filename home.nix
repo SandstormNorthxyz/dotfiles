@@ -192,8 +192,8 @@
 
   programs.git = {
     enable = true;
-    userName = "gagnonsilas";
-    userEmail = "gagnon.silas@gmail.com";
+    userName = "SandstormNorthxyz";
+    userEmail = "collingkeegan@gmail.com";
     extraConfig = {
       pull.rebase = false;
       push.autoSetupRemote = true;
